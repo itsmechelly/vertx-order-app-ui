@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="This Application represents a small Microservice App using Eclipse Vert.x and Hazelcast In-Memory Data Grid." />
+        <meta name="author" content="Chelly Izraelov" />
+        <title>Microservice App - Vert.x - Hazelcast IMDG</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/png" href="assets/shopping-bag.png" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Contact-Me navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="https://github.com/itsmechelly/vertx-order-app" target="_blank">Vert.x Order Application</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page">Contact Me →</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://chellyiz-portfolio.s3-website-eu-west-1.amazonaws.com/" target="_blank">My Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://github.com/itsmechelly/" target="_blank">My Github</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/chelly-izraelov/" target="_blank">My Linkedin</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://wa.me/972547570024?text=Hi, I saw your resume and was very impressed, are you available for a phone call?" target="_blank" class="whatsapplink hidemobile">WhatsApp</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tel:0547570024">Phone Call</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Vert.x-App content-->
+                    <article>
+                        <!-- Vert.x-App header-->
+                        <header class="mb-4">
+                            <!-- Vert.x-App title-->
+                            <h1 class="fw-bolder mb-1">Vert.x application Preview</h1>
+                            <!-- Vert.x-App meta content-->
+                            <div class="text-muted fst-italic mb-2">A small Microservice App using Eclipse Vert.x and Hazelcast IMDG</div>
+                            <!-- Vert.x-App sources-->
+                            <a class="badge bg-secondary text-decoration-none link-light" href="https://github.com/itsmechelly/vertx-order-app" target="_blank">App Source Code</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="https://vertx.io/" target="_blank">Vert.x Documentation</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="https://hazelcast.com/" target="_blank">Hazelcast Documentation</a>
+                        </header>
+                        <!-- Preview image figure-->
+                        <class class="mb-4"><a href="https://drive.google.com/file/d/1GjTmLC_8ytuKJ2FbkCt3gQPhqwheg468/view?usp=sharing" target="_blank"><img class="img-fluid rounded" src="/assets/img/diagram.png" alt="..."/></a></class></figure>
+                        <!-- Vert.x-App content-->
+                        <section class="mb-5">
+                            <h4 class="fw-bolder mb-4 mt-5">About this Application</h4>
+                            <p class="fs-5 mb-4">This Project represents a small Microservice App using Eclipse Vert.x and Hazelcast In-Memory Data Grid.</p>
+                            <p class="fs-5 mb-4">The project is a Maven project, written by Java language and includes 2 modules,  the communication between the verticles will be by using Vert.x Event Bus. The modules names:
+                                <ul style="list-style-type:square;">
+                                    <li style="font-size:24px">RestVerticle module</li>
+                                    <li style="font-size:24px">OrderVerticle module</li>
+                                  </ul>
+                            </p>
+                            <p class="fs-5 mb-4">The maven package will be generating a docker-compose YAML that will contain two containers for the 2 verticles.</p>
+
+                            <h4 class="fw-bolder mb-4 mt-5">Please Note</h4>
+                            <p class="fs-5 mb-4">This page is only a preview for the application I developed.</p>
+                            <p class="fs-5 mb-4">Backend Development is in my blood, and these days I focus mainly on it.
+                            <br/>
+                            This is the reason I developed only the server side for this application.</p>
+                            <p class="fs-5 mb-4">I created this HTML page just for FUN and to make it more accessible and convenient for you.</p>
+                            <p class="fs-5 mb-4">To see the Microservice Project source code click below:</p>
+                            <a href="https://github.com/itsmechelly/vertx-order-app" target="_blank">
+                                <button class="btn btn-primary" id="button-contact" type="button">Go to Source Code on Github →</button>
+                            </a>
+                            
+                            <h4 class="fw-bolder mb-4 mt-5">A Few Words About: Eclipse Vert.x and Hazelcast IMDG</h4>
+                            <p class="fs-5 mb-4">My main purpose working on this app was to learn new skills, this project mainly focused on Eclipse Vert.x and Hazelcast IMDG functionality.</p>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <!-- About Vert.x-->
+                                        <div class="card mb-4">
+                                            <img src="/assets/img/vertx_img.png" alt="..." />
+                                            <div class="card-body">
+                                                <div class="small text-muted">A Few Words About...</div>
+                                                <h2 class="card-title h4">Eclipse Vert.x</h2>
+                                                <p class="card-text">Eclipse Vert.x is a tool-kit for building reactive asynchronous applications on the JVM. <br/>Reactive applications are both scalable as workloads grow, and resilient when failures arise.</p>
+                                                <a class="btn btn-primary" href="https://vertx.io/" target="_blank">Read more →</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <!-- About Hezelcast-->
+                                        <div class="card mb-4">
+                                            <a href="#!"><img class="card-img-top" src="https://hazelcast.com/brand-assets/hzc-assets/preview-horz-flat-rev.png" alt="..." /></a>
+                                            <div class="card-body">
+                                                <div class="small text-muted">A Few Words About...</div>
+                                                <h2 class="card-title h4">Hazelcast</h2>
+                                                <p class="card-text">Hazelcast is an open source In-Memory Data Grid (IMDG). It provides elastically scalable distributed In-Memory computing, widely recognized as fast and scalable approach to application performance.</p>
+                                                <a class="btn btn-primary" href="https://hazelcast.com/" target="_blank">Read more →</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h4 class="fw-bolder mb-4 mt-5">A Quick Glance to the Modules</h4>
+                                <p class="fs-5 mb-4">For full information on the project's architecture and to view the source code, <a href="https://github.com/itsmechelly/vertx-order-app" target="_blank">you can click here</a>.</p>
+                                <p class="fs-5 mb-4">Plus, you can take a quick glance at the structure of the 2 modules below:</p>
+                                <div class="col-lg-6">
+                        </section>
+                    </article>
+                </div>
+                <!-- Side widgets-->
+                <div class="col-lg-4">
+                    <!-- Github widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Link to Source Code on Github</div>
+                        <div class="card-body">
+                            <div class="input-group">
+                                Backend Development is in my blood, this is the reason I developed only the server side for this application.
+                                <br/><br/>
+                                I created this HTML page just for FUN and to make it more accessible and convenient for you.
+                                <br/><br/>
+                                To see the Microservice Project source code click below:
+                                <br/><br/>
+                                <a href="https://github.com/itsmechelly/vertx-order-app" target="_blank">
+                                    <button class="btn btn-primary" id="button-contact" type="button">Go to Source Code on Github →</button>
+                                </a> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tech-Stack widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Tech Stack</div>
+                        <div class="card-body">
+                                <div class="col-sm-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li style="color:blue">Java Language</li>
+                                        <li style="color:blue">Eclipse Vert.x</li>
+                                        <li style="color:blue">Vert.x Event Bus</li>
+                                        <li style="color:blue">Hazelcast</li>
+                                        <li style="color:blue">Maven</li>
+                                        <li style="color:blue">Docker</li>
+                                        <li style="color:blue">Microservice App</li>
+                                        <li style="color:blue">Asynchronous app</li>
+                                        <li style="color:blue">HTML</li>
+                                        <li style="color:blue">CSS</li>
+                                        <li style="color:blue">Bootstrap 5</li>
+                                        <li style="color:blue">Json Format</li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- About Me widget-->
+                    <!-- <div class="card mb-4">
+                        <div class="card-header">About Me</div>
+                        <div class="card-body">You can put anything you want inside here... Hi my name is Chelly lalalal lalaa lalalaYou can put anything you want inside here... Hi my name is Chelly lalalal lalaa lalalaYou can put anything you want inside here... Hi my name is Chelly lalalal lalaa lalala<br/>You can put anything you want inside here... Hi my name is Chelly lalalal lalaa</div>
+                    </div> -->
+                </div>
+                <!-- More-Page content-->
+                <div class="row">
+                    <div class="col-lg-6">
+                    <!-- Architecture section 1-->
+                    <section class="mb-5">
+                        <div class="card mb-4">
+                            <!-- <a href="#!"><img class="card-img-top" src="https://litslink.com/wp-content/uploads/2021/03/vertx-development-services-1.png" alt="..." /></a> -->
+                            <div class="card-body">
+                                <div class="small text-muted">Module Architecture</div>
+                                <h2 class="card-title">RestVerticle</h2>
+                                <a class="btn btn-primary" href="https://github.com/itsmechelly/vertx-order-app/tree/main/rest-verticle" target="_blank">Go to Source Code on Github →</a>
+                                <br/><br/>
+                                <p class="card-text">This java module will be a Vert.x verticle and will contain:</p>
+                                <div class="card-body">
+                                    <!-- Class with nested methods 1 -->
+                                    <div class="d-flex mb-4">
+                                        <!-- Parent Class -->
+                                        <div class="flex-shrink-0"><img class="rounded-circle" src="/assets/img/purple_circle.png" alt="..." /></div>
+                                        <div class="ms-3">
+                                            <div class="fw-bold">Main Class:</div>
+                                            <!-- Child method 1-->
+                                            <div class="d-flex mt-4">
+                                                <div class="flex-shrink-0"><img class="rounded-circle" src="/assets/img/turquoise_circle.png" alt="..." /></div>
+                                                <div class="ms-3">
+                                                    <div class="fw-bold">main(String[] args) </div>
+                                                    To run the application in a cluster mode, the main class will use Vert.x implementation of Hazelcast as a cluster manager.
+                                                    This method will generate the hazelcast configuration and set the destination address.
+                                                </div>
+                                            </div>
+                                            <!-- Child method 2-->
+                                            <div class="d-flex mt-4">
+                                                <div class="flex-shrink-0"><img class="rounded-circle" src="/assets/img/turquoise_circle.png" alt="..." /></div>
+                                                <div class="ms-3">
+                                                    <div class="fw-bold">getAddress() </div>
+                                                    This method will use the NetworkInterface to locate and filter the IP addresses.
+                                                    The relevant IP address will be sent back to the main method.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Class with nested methods 2 -->
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0"><img class="rounded-circle" src="/assets/img/purple_circle.png" alt="..." /></div>
+                                        <div class="ms-3">
+                                            <div class="fw-bold">RestVerticle class:</div>
+                                            <br/>
+                                            <u>First, we will start by creating HTTP Server and Router:</u>
+                                            <!-- Child method 1 -->
+                                            <div class="d-flex mt-4">
+                                                <div class="flex-shrink-0"><img class="rounded-circle" src="/assets/img/turquoise_circle.png" alt="..." /></div>
+                                                <div class="ms-3">
+                                                    <div class="fw-bold">start(Promise&ltVoid&gt promise)</div>
+                                                    This method starts an HTTP server.
+                                                    The method create a Vert.x HTTP server and then handle requests using the router generated from the createRouter() method (listening to port 8080).                                                                                                        </div>
+                                            </div>
+                                            <!-- Child method 2 -->
+                                            <div class="d-flex mt-4">
+                                                <div class="flex-shrink-0"><img class="rounded-circle" src="/assets/img/turquoise_circle.png" alt="..." /></div>
+                                                <div class="ms-3">
+                                                    <div class="fw-bold">createRouter()</div>
+                                                    This method creates a Vert.x Web Router (the object used to route HTTP requests to specific request handlers).
+                                                    The method will return Vert.x Web Router.                                                                                                    </div>
+                                            </div>
+                                            <br/>
+                                            <u>Then, this class will expose a REST API (using Vert.x) with 5 REST methods:</u>
+                                            <!-- Child method 3 -->
+                                            <div class="d-flex mt-4">
+                                                <div class="flex-shrink-0"><img class="rounded-circle" src="/assets/img/turquoise_circle.png" alt="..." /></div>
+                                                <div class="ms-3">
+                                                    <div class="fw-bold">GET: greetingHandler(RoutingContext context)</div>
+                                                    This method greeting the user at the main endpoint.                                                </div>
+                                            </div>
+                                            <!-- Child method 4 -->
+                                            <div class="d-flex mt-4">
+                                                <div class="flex-shrink-0"><img class="rounded-circle" src="/assets/img/turquoise_circle.png" alt="..." /></div>
+                                                <div class="ms-3">
+                                                    <div class="fw-bold">POST: loginHandler(RoutingContext context)</div>
+                                                    This method will use the RoutingContext interface to get the username and password from the user, and check if the user can be logged in (username and password will be saved in local JSON file).
+                                                    In the background the module should open a session for each user that logged in.                                                    
+                                                </div>
+                                            </div>
+                                            <!-- Child method 5 -->
+                                            <div class="d-flex mt-4">
+                                                <div class="flex-shrink-0"><img class="rounded-circle" src="/assets/img/turquoise_circle.png" alt="..." /></div>
+                                                <div class="ms-3">
+                                                    <div class="fw-bold">POST: logoutHandler(RoutingContext context)</div>
+                                                    This method will be used to log out from the user session, his session will be destroyed.
+                                                </div>
+                                            </div>
+                                            <!-- Child method 6 -->
+                                            <div class="d-flex mt-4">
+                                                <div class="flex-shrink-0"><img class="rounded-circle" src="/assets/img/turquoise_circle.png" alt="..." /></div>
+                                                <div class="ms-3">
+                                                    <div class="fw-bold">POST: addOrderHandler(RoutingContext context)</div>
+                                                    This method will add an order to the user.
+                                                    By using Vert.x Event Bus, the order will be sent to the OrderVerticle module.
+                                                </div>
+                                            </div>
+                                            <!-- Child method 7 -->
+                                            <div class="d-flex mt-4">
+                                                <div class="flex-shrink-0"><img class="rounded-circle" src="/assets/img/turquoise_circle.png" alt="..." /></div>
+                                                <div class="ms-3">
+                                                    <div class="fw-bold">GET: getOrdersHandler(RoutingContext context)</div>
+                                                    This method will return all user orders.
+                                                    The request to get the data will be sent by Vert.x Event Bus to the OrderVerticle module.
+                                                </div>
+                                            </div>
+                                            <br/>
+                                            <u>Extra methods used in this class to support those REST methods:</u>
+                                            <!-- Child method 8 -->
+                                            <div class="d-flex mt-4">
+                                                <div class="flex-shrink-0"><img class="rounded-circle" src="/assets/img/turquoise_circle.png" alt="..." /></div>
+                                                <div class="ms-3">
+                                                    <div class="fw-bold">sessionAuth(RoutingContext context)</div>
+                                                    Helper method to check if users session is permitted.                                                </div>
+                                            </div>
+                                            <!-- Child method 9 -->
+                                            <div class="d-flex mt-4">
+                                                <div class="flex-shrink-0"><img class="rounded-circle" src="/assets/img/turquoise_circle.png" alt="..." /></div>
+                                                <div class="ms-3">
+                                                    <div class="fw-bold">contextResponse(RoutingContext context, String errorValue, String loginValue, Integer httpStatus)</div>
+                                                    Helper method to print error values in case one of the endpoints collapse, or get runtime error.
+                                                    This method used in other methods exist in this java class, I added it for clean code. 😊                                                                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                                <a class="btn btn-primary" href="https://github.com/itsmechelly/vertx-order-app/tree/main/rest-verticle" target="_blank">Go to Source Code on Github →</a>
+                            </div>
+                        </div>
+                    </section>
+                    </div>
+                    <div class="col-lg-6">
+                    <!-- Architecture section 2 -->
+                    <section class="mb-5">
+                        <div class="card mb-4">
+                            <!-- <a href="#!"><img class="card-img-top" src="https://litslink.com/wp-content/uploads/2021/03/vertx-development-services-1.png" alt="..." /></a> -->
+                            <div class="card-body">
+                                <div class="small text-muted">Module Architecture</div>
+                                <h2 class="card-title">OrderVerticle</h2>
+                                <a class="btn btn-primary" href="https://github.com/itsmechelly/vertx-order-app/tree/main/order-verticle" target="_blank">Go to Source Code on Github →</a>
+                                <br/><br/>
+                                <p class="card-text">This java module will be a Vert.x verticle and will contain:</p>
+                                <div class="card-body">
+                                    <!-- Class with nested methods 1 -->
+                                    <div class="d-flex mb-4">
+                                        <!-- Parent Class -->
+                                        <div class="flex-shrink-0"><img class="rounded-circle" src="assets/img/purple_circle.png" alt="..." /></div>
+                                        <div class="ms-3">
+                                            <div class="fw-bold">Main Class:</div>
+                                            <!-- Child method 1-->
+                                            <div class="d-flex mt-4">
+                                                <div class="flex-shrink-0"><img class="rounded-circle" src="assets/img/turquoise_circle.png" alt="..." /></div>
+                                                <div class="ms-3">
+                                                    <div class="fw-bold">main(String[] args) </div>
+                                                    To run the application in a cluster mode, the main class will use Vert.x implementation of Hazelcast as a cluster manager.
+                                                    This method will generate the hazelcast configuration and set the destination address.
+                                                </div>
+                                            </div>
+                                            <!-- Child method 2-->
+                                            <div class="d-flex mt-4">
+                                                <div class="flex-shrink-0"><img class="rounded-circle" src="assets/img/turquoise_circle.png" alt="..." /></div>
+                                                <div class="ms-3">
+                                                    <div class="fw-bold">getAddress() </div>
+                                                    This method will use the NetworkInterface to locate and filter the IP addresses.
+                                                    The relevant IP address will be sent back to the main method.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Class with nested methods 2 -->
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0"><img class="rounded-circle" src="assets/img/purple_circle.png" alt="..." /></div>
+                                        <div class="ms-3">
+                                            <div class="fw-bold">OrderVerticle class:</div>
+                                            <br/>
+                                            <u>First, by using Vert.x Event Bus, we will manage requests that received:</u>
+                                            <!-- Child method 1 -->
+                                            <div class="d-flex mt-4">
+                                                <div class="flex-shrink-0"><img class="rounded-circle" src="assets/img/turquoise_circle.png" alt="..." /></div>
+                                                <div class="ms-3">
+                                                    <div class="fw-bold">start(Promise&ltVoid&gt promise)</div>
+                                                    This method use Verte.x Event Bus to manage requests received from the RestVertical module.
+                                                    The Event Bus will direct each request to the relevant method.                                                                                                                                                                </div>
+                                            </div>
+                                            <br/>
+                                            <u>Then, each request will be performed:</u>
+                                            <!-- Child method 2 -->
+                                            <div class="d-flex mt-4">
+                                                <div class="flex-shrink-0"><img class="rounded-circle" src="assets/img/turquoise_circle.png" alt="..." /></div>
+                                                <div class="ms-3">
+                                                    <div class="fw-bold">addOrder(Message&ltObject&gt message, String orderId, String orderName, String orderDate)</div>
+                                                    This method add new orders to the user existing orders.
+                                                    All the data will be saved in a local JSON file and include:
+                                                    orderID, orderName and orderDate.
+                                                    The response will be sent to the OrderVerticle module.
+                                                </div>
+                                            </div>
+                                            <!-- Child method 3 -->
+                                            <div class="d-flex mt-4">
+                                                <div class="flex-shrink-0"><img class="rounded-circle" src="assets/img/turquoise_circle.png" alt="..." /></div>
+                                                <div class="ms-3">
+                                                    <div class="fw-bold">getOrders(Message&ltObject&gt message) </div>
+                                                    This method will return all user orders.
+                                                    <br/>
+                                                    The response will be sent to the OrderVerticle module.
+                                                </div>
+                                            </div>
+                                            <br/>
+                                            <u>Extra method used in this class to support other methods:</u>
+                                            <!-- Child method 4 -->
+                                            <div class="d-flex mt-4">
+                                                <div class="flex-shrink-0"><img class="rounded-circle" src="assets/img/turquoise_circle.png" alt="..." /></div>
+                                                <div class="ms-3">
+                                                    <div class="fw-bold">messageResponse(Message&ltObject&gt message, String errorValue, String insertValue)</div>
+                                                    Helper method to print error values in case one of the endpoints collapse, or get runtime error.
+                                                    This method used in other methods exist in this java class, I added it for clean code. 😊
+                                                </div>
+                                            </div>
+                                            <br/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-primary" href="https://github.com/itsmechelly/vertx-order-app/tree/main/order-verticle" target="_blank">Go to Source Code on Github →</a>
+                            </div>
+                        </div>
+                    </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Chelly Izraelov 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
