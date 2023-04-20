@@ -1,7 +1,7 @@
 ﻿# vertx-order-app-ui
 This repo contain the ui web page I created for the vertex-order-app, it's only a preview for the project.<br/>
-To view the preview page [please click here](http://vertx-order-application.s3-website-eu-west-1.amazonaws.com/).<br/>
-For the vertx-order-app source code [please click here](https://github.com/itsmechelly/vertx-order-app).<br/>
+To view the preview page [please CLICK HERE](http://vertx-order-application.s3-website-eu-west-1.amazonaws.com/).<br/>
+For the vertx-order-app source code [please CLICK HERE](https://github.com/itsmechelly/vertx-order-app).<br/>
 
 ![vertx-order-app drawio](https://user-images.githubusercontent.com/60425986/229585752-c683974f-0c4e-4f0f-b805-5d4c1ecefe92.png)
 
